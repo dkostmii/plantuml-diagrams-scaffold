@@ -9,6 +9,10 @@ if (-not (Test-Path $plantumlHome -PathType Container)) {
     ./Get-Plantuml.ps1 -plantumlFile $plantumlJarPath;
 }
 
+if (-not (Test-Path $plantumlJarPath -PathType Leaf)) {
+    ./Get-Plantuml.ps1 -plantumlFile $plantumlJarPath;
+}
+
 Write-Output "Building diagrams...";
 
 java -jar $plantumlJarPath **.pu -o Build -progress -failfast

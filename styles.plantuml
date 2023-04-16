@@ -1,0 +1,7 @@
+@startuml styles
+
+!theme amiga
+skinparam dpi 200
+
+@enduml
+

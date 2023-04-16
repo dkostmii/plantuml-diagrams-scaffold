@@ -1,0 +1,8 @@
+# Ignore plantuml.jar
+Tools/*
+!Tools/.gitkeep
+
+# Ignore built diagrams by default
+Build/*
+!Build/.gitkeep
+

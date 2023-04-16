@@ -1,0 +1,8 @@
+@startuml HelloWorld
+
+!include ./styles.plantuml
+
+Bob -> (Hello,…)
+Alice -> (…World!)
+
+@enduml

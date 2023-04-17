@@ -15,7 +15,7 @@ if (-not (Test-Path $plantumlJarPath -PathType Leaf)) {
 
 Write-Output "Building diagrams...";
 
-java -jar $plantumlJarPath **.pu -o Build -progress -failfast
+java -jar $plantumlJarPath **.pu -o Build -progress -duration -failfast -checkmetadata -nbthread auto
 
 Write-Output "`nDone.";
 
